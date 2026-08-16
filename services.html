@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการการศึกษา - ระบบบริการการศึกษา</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header ด้านบน แสดงโลโก้และเมนูหลัก -->
+    <header class="header">
+        <div class="container header-content">
+
+            <!-- โลโก้มหาวิทยาลัยแม่โจ้ -->
+            <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <img src="https://upload.wikimedia.org/wikipedia/th/b/b7/MJU_LOGO.svg" alt="ตรามหาวิทยาลัยแม่โจ้" style="height: 50px; width: auto;">
+                <div>
+                    <h2 style="margin: 0; line-height: 1.2;">ระบบบริการการศึกษา</h2>
+                    <p style="margin: 0;">มหาวิทยาลัยแม่โจ้</p>
+                </div>
+            </div>
+
+            <!-- แถบเมนูสำหรับเปลี่ยนหน้า -->
+            <nav class="navbar">
+                <a href="index.html">หน้าแรก</a>
+                <a class="active" href="services.html">บริการการศึกษา</a>
+                <a href="student.html">ข้อมูลนักศึกษา</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- หัวข้อหลักของหน้าบริการการศึกษา -->
+        <section class="page-title">
+            <div class="container">
+                <p class="subtitle">EDUCATION SERVICES</p>
+                <h1>บริการการศึกษา</h1>
+                <p>รวมบริการและระบบสารสนเทศสำหรับนักศึกษา</p>
+            </div>
+        </section>
+
+        <!-- รายการการ์ดบริการทั้งหมด (มีปุ่มดูรายละเอียดด้านล่าง) -->
+        <section class="section">
+            <div class="container">
+                <h2>รายการบริการทั้งหมด</h2>
+                
+                <div class="card-grid">
+
+                    <!-- การ์ด 1: ลงทะเบียนเรียน -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">📚</div>
+                            <h3>ลงทะเบียนเรียน</h3>
+                            <p>ตรวจสอบและลงทะเบียนรายวิชาตามแผนการเรียน</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <!-- การ์ด 2: ตารางเรียน / ตารางสอบ -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">🗓️</div>
+                            <h3>ตารางเรียน / ตารางสอบ</h3>
+                            <p>ตรวจสอบตารางเรียน ตารางสอบ และห้องเรียนประจำภาคการศึกษา</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <!-- การ์ด 3: ผลการเรียน -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">📊</div>
+                            <h3>ผลการเรียน (GPA)</h3>
+                            <p>ตรวจสอบผลการเรียนประจำภาค และเกรดเฉลี่ยสะสม</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <!-- การ์ด 4: คำร้องออนไลน์ -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">📝</div>
+                            <h3>คำร้องออนไลน์</h3>
+                            <p>ยื่นคำร้องขอเอกสารสำคัญ เช่น ใบรับรองสภาพนักศึกษา ใบแสดงผลการเรียน</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <!-- การ์ด 5: ชำระค่าธรรมเนียม -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">💳</div>
+                            <h3>ชำระค่าธรรมเนียม</h3>
+                            <p>ตรวจสอบรายการชำระเงินและพิมพ์ใบแจ้งชำระค่าเทอม</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <!-- การ์ด 6: ตรวจสอบการสำเร็จการศึกษา -->
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">🎓</div>
+                            <h3>ตรวจสอบการสำเร็จการศึกษา</h3>
+                            <p>ยื่นขอสำเร็จการศึกษาและตรวจสอบเงื่อนไขการจบ</p>
+                            <a href="#">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</p>
+            <p>© 2026 Education Service</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

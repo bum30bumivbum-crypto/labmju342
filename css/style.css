@@ -1,0 +1,677 @@
+/* =========================================
+   MJU EDUCATION SERVICE
+   Clean & Comfortable UI
+========================================= */
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", "Noto Sans Thai", Tahoma, Arial, sans-serif;
+    background: #f7f9f8;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+/* ---------- Variables ---------- */
+:root {
+    --green: #006b3c;
+    --green-dark: #004f2d;
+    --green-light: #eaf5ef;
+    --green-soft: #f2f9f5;
+
+    --text: #26352d;
+    --text-light: #68756e;
+
+    --white: #ffffff;
+    --gray-bg: #f5f7f6;
+    --border: #e3e9e5;
+
+    --shadow-sm: 0 3px 12px rgba(0, 60, 35, 0.06);
+    --shadow-md: 0 8px 25px rgba(0, 60, 35, 0.10);
+
+    --radius: 14px;
+}
+
+/* ---------- Container ---------- */
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.header-content {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.logo {
+    color: var(--green);
+}
+
+.logo img {
+    height: 52px !important;
+    width: auto !important;
+}
+
+.logo h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+.logo p {
+    color: var(--text-light);
+    font-size: 0.82rem;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #536159;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 9px;
+    transition: 0.25s ease;
+}
+
+.navbar a:hover {
+    background: var(--green-soft);
+    color: var(--green);
+}
+
+.navbar a.active {
+    background: var(--green);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 107, 60, 0.18);
+}
+
+/* =========================================
+   WELCOME / HOME
+========================================= */
+
+.welcome {
+    padding: 75px 0;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0, 107, 60, 0.08), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f2f8f5 100%);
+}
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.welcome-text {
+    padding: 20px 0;
+}
+
+.subtitle {
+    color: var(--green);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.welcome-text h1 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    color: var(--green-dark);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.welcome-text > p:last-child {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 550px;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0, 107, 60, 0.08);
+}
+
+.login-card h3 {
+    font-size: 1.45rem;
+    color: var(--green-dark);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Input */
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #f8faf9;
+    border: 1px solid #dce5df;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.25s ease;
+}
+
+.input-group:focus-within {
+    border-color: var(--green);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 107, 60, 0.08);
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    color: #829088;
+    margin-left: 13px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 13px 12px;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.input-group input::placeholder {
+    color: #9aa69f;
+}
+
+.domain-tag {
+    color: #75827a;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    padding-right: 12px;
+}
+
+/* Login Button */
+.btn-login {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    background: var(--green);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-login:hover {
+    background: var(--green-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0, 107, 60, 0.2);
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.section {
+    padding: 65px 0;
+}
+
+.section.gray {
+    background: #f0f4f2;
+}
+
+.section h2 {
+    color: var(--green-dark);
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   CARD GRID
+========================================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 107, 60, 0.15);
+}
+
+.card-content {
+    padding: 27px;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-light);
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+
+.card h3 {
+    color: #284235;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+}
+
+.card a {
+    color: var(--green);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.card a:hover {
+    color: var(--green-dark);
+    text-decoration: underline;
+}
+
+/* =========================================
+   NEWS
+========================================= */
+
+.news-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-box article {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    border-radius: 12px;
+    padding: 23px;
+    transition: 0.25s ease;
+}
+
+.news-box article:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
+.news-box h3 {
+    color: #284235;
+    font-size: 1.05rem;
+    margin-bottom: 7px;
+}
+
+.news-box p {
+    color: var(--text-light);
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+}
+
+.news-box small {
+    color: #8a958f;
+}
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.page-title {
+    background:
+        linear-gradient(
+            135deg,
+            #eaf5ef 0%,
+            #f8fbf9 100%
+        );
+    padding: 55px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-title h1 {
+    color: var(--green-dark);
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin-bottom: 8px;
+}
+
+.page-title p:last-child {
+    color: var(--text-light);
+}
+
+/* =========================================
+   STUDENT SEARCH
+========================================= */
+
+.search-box {
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.search-box label {
+    color: var(--green-dark);
+}
+
+.search-box input {
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.search-box input:focus {
+    border-color: var(--green) !important;
+    box-shadow: 0 0 0 3px rgba(0, 107, 60, 0.08);
+}
+
+.search-box button {
+    background-color: var(--green) !important;
+    transition: 0.25s ease;
+}
+
+.search-box button:hover {
+    background-color: var(--green-dark) !important;
+}
+
+/* =========================================
+   STUDENT PROFILE
+========================================= */
+
+.student-box {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.student-profile {
+    background: var(--green-soft);
+    padding: 35px 25px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+}
+
+.student-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    font-size: 40px;
+    box-shadow: var(--shadow-sm);
+}
+
+.student-profile h3 {
+    color: var(--green-dark);
+    margin-bottom: 5px;
+}
+
+.student-profile p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.student-info {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.student-info > div {
+    background: #f8faf9;
+    border: 1px solid #e7ede9;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.student-info span {
+    display: block;
+    color: #7b8881;
+    font-size: 0.82rem;
+    margin-bottom: 3px;
+}
+
+.student-info strong {
+    color: #30493b;
+    font-size: 1rem;
+}
+
+.student-info .green {
+    color: var(--green);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #173d2c;
+    color: #dbe8e1;
+    padding: 28px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    margin: 3px 0;
+}
+
+.footer p:last-child {
+    color: #9db3a7;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .welcome-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+
+    .welcome-text > p:last-child {
+        margin: auto;
+    }
+
+    .login-card {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-box {
+        grid-template-columns: 1fr;
+    }
+
+    .student-profile {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .header-content {
+        flex-direction: column;
+        padding: 14px 0;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 8px 11px;
+        font-size: 0.85rem;
+    }
+
+    .welcome {
+        padding: 50px 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+
+    .login-card {
+        padding: 23px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section h2 {
+        font-size: 1.45rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-box {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        padding: 40px 0;
+    }
+
+    .student-info {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-box label {
+        margin-right: 0 !important;
+        text-align: left;
+    }
+
+    .search-box input {
+        width: 100% !important;
+    }
+
+    .search-box button {
+        margin-left: 0 !important;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .logo img {
+        height: 44px !important;
+    }
+
+    .logo h2 {
+        font-size: 1.05rem;
+    }
+
+    .logo p {
+        font-size: 0.72rem;
+    }
+
+    .navbar a {
+        padding: 7px 8px;
+        font-size: 0.78rem;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+}

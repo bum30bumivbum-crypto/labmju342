@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบบริการการศึกษา</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- แถบด้านบนแสดงโลโก้กับเมนู -->
+    <header class="header">
+        <div class="container header-content">
+
+            <!-- โลโก้แม่โจ้ -->
+            <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <img src="https://upload.wikimedia.org/wikipedia/th/b/b7/MJU_LOGO.svg" alt="ตรามหาวิทยาลัยแม่โจ้" style="height: 50px; width: auto;">
+                <div>
+                    <h2 style="margin: 0; line-height: 1.2;">ระบบบริการการศึกษา</h2>
+                    <p style="margin: 0;">มหาวิทยาลัยแม่โจ้</p>
+                </div>
+            </div>
+
+            <!-- เมนู -->
+            <nav class="navbar">
+                <a class="active" href="index.html">หน้าแรก</a>
+                <a href="services.html">บริการการศึกษา</a>
+                <a href="student.html">ข้อมูลนักศึกษา</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ส่วนข้อความต้อนรับและฟอร์มล็อกอิน -->
+        <section class="welcome">
+            <div class="container welcome-container">
+
+                <div class="welcome-text">
+                    <p class="subtitle">EDUCATION SERVICE</p>
+                    <h1>ระบบบริการการศึกษา</h1>
+                    <p>ระบบสำหรับให้บริการข้อมูลด้านการศึกษา สำหรับนักศึกษา</p>
+                </div>
+
+                <div class="login-card">
+                    <h3>เข้าสู่ระบบ</h3>
+                    <form>
+                        <!-- ช่องใส่อีเมล -->
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </span>
+                            <input type="text" placeholder="email" required>
+                            <span class="domain-tag">@mju.ac.th</span>
+                        </div>
+
+                        <!-- ช่องใส่รหัสผ่าน -->
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </span>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+
+                        <!-- ปุ่มล็อกอิน -->
+                        <button type="submit" class="btn-login">เข้าสู่ระบบ</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section gray">
+            <div class="container">
+                <h2>บริการที่ใช้บ่อย</h2>
+
+                <div class="card-grid">
+
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">📚</div>
+                            <h3>ลงทะเบียนเรียน</h3>
+                            <p>ตรวจสอบและลงทะเบียนรายวิชา</p>
+                            <a href="services.html">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">🗓️</div>
+                            <h3>ตารางเรียน</h3>
+                            <p>ตรวจสอบตารางเรียนและห้องเรียน</p>
+                            <a href="services.html">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">📊</div>
+                            <h3>ผลการเรียน</h3>
+                            <p>ตรวจสอบผลการเรียนและเกรดเฉลี่ย</p>
+                            <a href="services.html">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+                   
+                    <article class="card">
+                        <div class="card-content">
+                            <div class="icon">💳</div>
+                            <h3>ชําระค่าทำเนียม</h3>
+                            <p>ตรวจสอบและชำระค่าธรรมเนียม</p>
+                            <a href="services.html">ดูรายละเอียด</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ข่าวประกาศ -->
+        <section class="section">
+            <div class="container">
+                <h2>ข่าวประชาสัมพันธ์</h2>
+
+                <div class="news-box">
+
+                    <article>
+                        <h3>ประกาศกำหนดการลงทะเบียนเรียน</h3>
+                        <p>ภาคการศึกษาที่ 1 ปีการศึกษา 2569</p>
+                        <small>12 สิงหาคม 2569</small>
+                    </article>
+
+                    <article>
+                        <h3>แจ้งกำหนดการชำระค่าธรรมเนียม</h3>
+                        <p>นักศึกษาสามารถตรวจสอบข้อมูล ผ่านระบบบริการการศึกษา</p>
+                        <small>10 สิงหาคม 2569</small>
+                    </article>
+                    
+                    <article>
+                        <h3>ปรับปรุงระบบในวันที่xxเดือนXXปีxxxx</h3>
+                        <p>กรุณาใช่งานก่อนที่เว็ปจะปรับปรุง </p>
+                        <small>xxx xxx xxxx</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</p>
+            <p>© 2026 Education Service</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

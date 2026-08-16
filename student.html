@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลนักศึกษา - ระบบบริการการศึกษา</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- หน้าเว็บ -->
+    <header class="header">
+        <div class="container header-content">
+
+            <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <img src="https://upload.wikimedia.org/wikipedia/th/b/b7/MJU_LOGO.svg" alt="ตรามหาวิทยาลัยแม่โจ้" style="height: 50px; width: auto;">
+                <div>
+                    <h2 style="margin: 0; line-height: 1.2;">ระบบบริการการศึกษา</h2>
+                    <p style="margin: 0;">มหาวิทยาลัยแม่โจ้</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <a href="index.html">หน้าแรก</a>
+                <a href="services.html">บริการการศึกษา</a>
+                <a class="active" href="student.html">ข้อมูลนักศึกษา</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- หัวข้อหน้าข้อมูลนักศึกษา -->
+        <section class="page-title">
+            <div class="container">
+                <p class="subtitle">STUDENT INFORMATION</p>
+                <h1>ข้อมูลนักศึกษา</h1>
+                <p>ค้นหาและแสดงข้อมูลนักศึกษา</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <!-- ช่องสำหรับกรอกรหัสนักศึกษาเพื่อค้นหา -->
+                <div class="search-box" style="margin-bottom: 2rem; background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+                    <label for="student-id" style="font-weight: bold; margin-right: 10px; font-size: 1.1rem;">กรอกรหัสนักศึกษา:</label>
+                    <input type="text" id="student-id" placeholder="เช่น 68XXXXXXX" style="padding: 10px 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; width: 250px; max-width: 100%;">
+                    <button style="padding: 10px 20px; background-color: #006837; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; margin-left: 8px;">ค้นหาข้อมูล</button>
+                </div>
+
+                <!-- ส่วนแสดงผลข้อมูลนักศึกษาที่ค้นหาเจอ -->
+                <div class="student-box">
+                    <aside class="student-profile">
+                        <div class="student-icon">📷</div>
+                        <h3>muhaha 5542Y</h3>
+                        <p>รหัสนักศึกษา: 68XXXXXXX</p>
+                    </aside>
+
+                    <div class="student-info">
+                        <div>
+                            <span>คณะ</span>
+                            <strong>วิทยาศาสตร์</strong>
+                        </div>
+                        <div>
+                            <span>สาขา</span>
+                            <strong>วิทยาการคอมพิวเตอร์</strong>
+                        </div>
+                        <div>
+                            <span>ชั้นปี</span>
+                            <strong>ปี 2</strong>
+                        </div>
+                        <div>
+                            <span>สถานะ</span>
+                            <strong class="green">กำลังศึกษา</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</p>
+            <p>© 2026 Education Service</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
